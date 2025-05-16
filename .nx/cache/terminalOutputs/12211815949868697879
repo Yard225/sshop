@@ -1,0 +1,16 @@
+
+> fulfillment-svc@0.0.1 test /Users/mac/Documents/DEV/NESTJS/sshop/services/fulfillment-svc
+> jest
+
+[31m[31m[1m[1m● [22m[1m[1mMultiple configurations found[22m[1m[22m:[39m[31m[39m
+[31m[31m[39m[31m[39m
+[31m[31m    * /Users/mac/Documents/DEV/NESTJS/sshop/services/fulfillment-svc/jest.config.js[39m[31m[39m
+[31m[31m    * `jest` key in /Users/mac/Documents/DEV/NESTJS/sshop/services/fulfillment-svc/package.json[39m[31m[39m
+[31m[31m[39m[31m[39m
+[31m[31m  Implicit config resolution does not allow multiple configuration files.[39m[31m[39m
+[31m[31m  Either remove unused config files or select one explicitly with `--config`.[39m[31m[39m
+[31m[31m[39m[31m[39m
+[31m[31m  [1mConfiguration Documentation:[22m[39m[31m[39m
+[31m[31m  https://jestjs.io/docs/configuration[39m[31m[39m
+[31m[31m[39m[31m[39m
+[41m[30m ELIFECYCLE [39m[49m [31mTest failed. See above for more details.[39m

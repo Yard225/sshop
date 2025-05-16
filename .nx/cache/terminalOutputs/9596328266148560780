@@ -1,0 +1,39 @@
+
+> payment-svc@0.0.1 test /Users/mac/Documents/DEV/NESTJS/sshop/services/payment-svc
+> jest
+
+[0m[7m[1m[31m FAIL [39m[22m[27m[0m [2mtest/unit/[22m[1mconfirm-payment.usecase.test.ts[22m
+  [1m● [22mTest suite failed to run
+
+    [96mtest/unit/confirm-payment.usecase.test.ts[0m:[93m1[0m:[93m43[0m - [91merror[0m[90m TS2307: [0mCannot find module '../../adapters/out/in-memory-payment.repository' or its corresponding type declarations.
+
+    [7m1[0m import { InMemoryPaymentRepository } from '../../adapters/out/in-memory-payment.repository';
+    [7m [0m [91m                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    [96mtest/unit/confirm-payment.usecase.test.ts[0m:[93m2[0m:[93m39[0m - [91merror[0m[90m TS2307: [0mCannot find module '../../core/usecases/confirm-payment.usecase' or its corresponding type declarations.
+
+    [7m2[0m import { ConfirmPaymentUseCase } from '../../core/usecases/confirm-payment.usecase';
+    [7m [0m [91m                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    [96mtest/unit/confirm-payment.usecase.test.ts[0m:[93m3[0m:[93m40[0m - [91merror[0m[90m TS2307: [0mCannot find module '../../core/usecases/initiate-payment.usecase' or its corresponding type declarations.
+
+    [7m3[0m import { InitiatePaymentUseCase } from '../../core/usecases/initiate-payment.usecase';
+    [7m [0m [91m                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[0m[7m[1m[31m FAIL [39m[22m[27m[0m [2mtest/unit/[22m[1minitiate-payment.test.ts[22m
+  [1m● [22mTest suite failed to run
+
+    [96mtest/unit/initiate-payment.test.ts[0m:[93m1[0m:[93m43[0m - [91merror[0m[90m TS2307: [0mCannot find module '../../adapters/out/in-memory-payment.repository' or its corresponding type declarations.
+
+    [7m1[0m import { InMemoryPaymentRepository } from '../../adapters/out/in-memory-payment.repository';
+    [7m [0m [91m                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    [96mtest/unit/initiate-payment.test.ts[0m:[93m2[0m:[93m40[0m - [91merror[0m[90m TS2307: [0mCannot find module '../../core/usecases/initiate-payment.usecase' or its corresponding type declarations.
+
+    [7m2[0m import { InitiatePaymentUseCase } from '../../core/usecases/initiate-payment.usecase';
+    [7m [0m [91m                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[33mA worker process has failed to exit gracefully and has been force exited. This is likely caused by tests leaking due to improper teardown. Try running with --detectOpenHandles to find leaks. Active timers can also cause this, ensure that .unref() was called on them.[39m
+[1mTest Suites: [22m[1m[31m2 failed[39m[22m, 2 total
+[1mTests:       [22m0 total
+[1mSnapshots:   [22m0 total
+[1mTime:[22m        20.556 s
+[2mRan all test suites[22m[2m.[22m
+[41m[30m ELIFECYCLE [39m[49m [31mTest failed. See above for more details.[39m

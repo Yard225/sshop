@@ -1,0 +1,59 @@
+
+> ordering-svc@0.0.1 test /Users/mac/Documents/DEV/NESTJS/sshop/services/ordering-svc
+> jest
+
+[0m[7m[1m[31m FAIL [39m[22m[27m[0m [2mtest/unit/[22m[1mcheckout-order.test.ts[22m
+  [1m● [22mTest suite failed to run
+
+    [96mtest/unit/checkout-order.test.ts[0m:[93m2[0m:[93m41[0m - [91merror[0m[90m TS2307: [0mCannot find module '../../adapters/out/in-memory-order.repository' or its corresponding type declarations.
+
+    [7m2[0m import { InMemoryOrderRepository } from '../../adapters/out/in-memory-order.repository';
+    [7m [0m [91m                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    [96mtest/unit/checkout-order.test.ts[0m:[93m3[0m:[93m23[0m - [91merror[0m[90m TS2307: [0mCannot find module '../../core/aggregates/order.aggregate' or its corresponding type declarations.
+
+    [7m3[0m import { Order } from '../../core/aggregates/order.aggregate';
+    [7m [0m [91m                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    [96mtest/unit/checkout-order.test.ts[0m:[93m4[0m:[93m34[0m - [91merror[0m[90m TS2307: [0mCannot find module '../../adapters/out/fake-stock.service' or its corresponding type declarations.
+
+    [7m4[0m import { FakeStockService } from '../../adapters/out/fake-stock.service';
+    [7m [0m [91m                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    [96mtest/unit/checkout-order.test.ts[0m:[93m5[0m:[93m38[0m - [91merror[0m[90m TS2307: [0mCannot find module '../../core/usecase/checkout-order.usecase' or its corresponding type declarations.
+
+    [7m5[0m import { CheckoutOrderUseCase } from '../../core/usecase/checkout-order.usecase';
+    [7m [0m [91m                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    [96mtest/unit/checkout-order.test.ts[0m:[93m6[0m:[93m27[0m - [91merror[0m[90m TS2307: [0mCannot find module '../../core/entities/order-item.entity' or its corresponding type declarations.
+
+    [7m6[0m import { OrderItem } from '../../core/entities/order-item.entity';
+    [7m [0m [91m                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    [96mtest/unit/checkout-order.test.ts[0m:[93m13[0m:[93m31[0m - [91merror[0m[90m TS2339: [0mProperty 'create' does not exist on type 'typeof ProductSKU'.
+
+    [7m13[0m         productId: ProductSKU.create('SKU-CAM123').toString(),
+    [7m  [0m [91m                              ~~~~~~[0m
+
+[0m[7m[1m[31m FAIL [39m[22m[27m[0m [2mtest/unit/[22m[1madd-item-to-cart.test.ts[22m
+  [1m● [22mTest suite failed to run
+
+    [96mtest/unit/add-item-to-cart.test.ts[0m:[93m2[0m:[93m41[0m - [91merror[0m[90m TS2307: [0mCannot find module '../../adapters/out/in-memory-order.repository' or its corresponding type declarations.
+
+    [7m2[0m import { InMemoryOrderRepository } from '../../adapters/out/in-memory-order.repository';
+    [7m [0m [91m                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    [96mtest/unit/add-item-to-cart.test.ts[0m:[93m3[0m:[93m10[0m - [91merror[0m[90m TS2305: [0mModule '"@org/shared-kernel"' has no exported member 'FixedIdGenerator'.
+
+    [7m3[0m import { FixedIdGenerator, ProductSKU } from '@org/shared-kernel';
+    [7m [0m [91m         ~~~~~~~~~~~~~~~~[0m
+    [96mtest/unit/add-item-to-cart.test.ts[0m:[93m4[0m:[93m38[0m - [91merror[0m[90m TS2307: [0mCannot find module '../../core/usecase/add-item-to-cart.usecase' or its corresponding type declarations.
+
+    [7m4[0m import { AddItemToCartUseCase } from '../../core/usecase/add-item-to-cart.usecase';
+    [7m [0m [91m                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    [96mtest/unit/add-item-to-cart.test.ts[0m:[93m20[0m:[93m29[0m - [91merror[0m[90m TS2339: [0mProperty 'create' does not exist on type 'typeof ProductSKU'.
+
+    [7m20[0m       productId: ProductSKU.create('SKU-CAM123').toString(),
+    [7m  [0m [91m                            ~~~~~~[0m
+
+[33mA worker process has failed to exit gracefully and has been force exited. This is likely caused by tests leaking due to improper teardown. Try running with --detectOpenHandles to find leaks. Active timers can also cause this, ensure that .unref() was called on them.[39m
+[1mTest Suites: [22m[1m[31m2 failed[39m[22m, 2 total
+[1mTests:       [22m0 total
+[1mSnapshots:   [22m0 total
+[1mTime:[22m        18.465 s
+[2mRan all test suites[22m[2m.[22m
+[41m[30m ELIFECYCLE [39m[49m [31mTest failed. See above for more details.[39m

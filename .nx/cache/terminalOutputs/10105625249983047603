@@ -1,0 +1,44 @@
+
+> catalog-svc@0.0.1 test /Users/mac/Documents/DEV/NESTJS/sshop/services/catalog-svc
+> jest
+
+[0m[7m[1m[31m FAIL [39m[22m[27m[0m [2mtest/unit/[22m[1mcreate-product.test.ts[22m
+  [1m● [22mTest suite failed to run
+
+    [96mtest/unit/create-product.test.ts[0m:[93m21[0m:[93m15[0m - [91merror[0m[90m TS2339: [0mProperty 'productId' does not exist on type 'void'.
+
+    [7m21[0m       const { productId } = await useCase.execute(payload);
+    [7m  [0m [91m              ~~~~~~~~~[0m
+
+[0m[7m[1m[31m FAIL [39m[22m[27m[0m [2mtest/unit/[22m[1mupdate-product-details.test.ts[22m
+  [1m● [22mTest suite failed to run
+
+    Your test suite must contain at least one test.
+
+      [2mat onResult ([22m../../node_modules/.pnpm/@jest+core@29.7.0_ts-node@10.9.2_@swc+core@1.11.24_@types+node@22.15.18_typescript@5.8.3_/node_modules/@jest/core/build/TestScheduler.js[2m:133:18)[22m
+      [2mat [22m../../node_modules/.pnpm/@jest+core@29.7.0_ts-node@10.9.2_@swc+core@1.11.24_@types+node@22.15.18_typescript@5.8.3_/node_modules/@jest/core/build/TestScheduler.js[2m:254:19[22m
+      [2mat [22m../../node_modules/.pnpm/emittery@0.13.1/node_modules/emittery/index.js[2m:363:13[22m
+          at Array.map (<anonymous>)
+      [2mat Emittery.emit ([22m../../node_modules/.pnpm/emittery@0.13.1/node_modules/emittery/index.js[2m:361:23)[22m
+
+[0m[7m[1m[31m FAIL [39m[22m[27m[0m [2mtest/unit/[22m[1madjust-stock.test.ts[22m
+  [1m● [22mTest suite failed to run
+
+    Cannot find module '@org/shared-kernel' from 'test/unit/adjust-stock.test.ts'
+
+    [0m[31m[1m>[22m[39m[90m 1 |[39m [36mimport[39m { [33mProductSKU[39m[33m,[39m [33mMoney[39m[33m,[39m [33mUniqueEntityID[39m } [36mfrom[39m [32m'@org/shared-kernel'[39m[33m;[39m
+     [90m   |[39m [31m[1m^[22m[39m
+     [90m 2 |[39m [36mimport[39m { [33mInMemoryProductRepository[39m } [36mfrom[39m [32m'../../src/adapters/out/in-memory-product.repository'[39m[33m;[39m
+     [90m 3 |[39m [36mimport[39m { [33mProduct[39m } [36mfrom[39m [32m'../../src/core/aggregates/product.aggregate'[39m[33m;[39m
+     [90m 4 |[39m [36mimport[39m { [33mVariant[39m } [36mfrom[39m [32m'../../src/core/entities/variant.entity'[39m[33m;[39m[0m
+
+      [2mat Resolver._throwModNotFoundError ([22m../../node_modules/.pnpm/jest-resolve@29.7.0/node_modules/jest-resolve/build/resolver.js[2m:427:11)[22m
+      [2mat Object.<anonymous> ([22m[0m[36mtest/unit/adjust-stock.test.ts[39m[0m[2m:1:1)[22m
+
+[33mA worker process has failed to exit gracefully and has been force exited. This is likely caused by tests leaking due to improper teardown. Try running with --detectOpenHandles to find leaks. Active timers can also cause this, ensure that .unref() was called on them.[39m
+[1mTest Suites: [22m[1m[31m3 failed[39m[22m, 3 total
+[1mTests:       [22m0 total
+[1mSnapshots:   [22m0 total
+[1mTime:[22m        21.491 s
+[2mRan all test suites[22m[2m.[22m
+[41m[30m ELIFECYCLE [39m[49m [31mTest failed. See above for more details.[39m
