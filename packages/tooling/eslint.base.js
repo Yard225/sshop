@@ -15,6 +15,7 @@ module.exports = {
   rules: {
     '@typescript-eslint/no-explicit-any': 'warn',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
-    'no-console': 'warn'
+    'no-console': 'warn',
+    'quotes': ['error', 'single']
   }
 };

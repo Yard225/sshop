@@ -7,5 +7,9 @@
 			"path": "../social-shop/social-shop"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"prettier.singleQuote": true,
+		"prettier.quoteProps": "as-needed",
+		"typescript.preferences.quoteStyle": "single"
+	}
 }

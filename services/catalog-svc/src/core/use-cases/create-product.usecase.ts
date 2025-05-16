@@ -1,14 +1,17 @@
-import { BaseUseCase } from '@org/shared-kernel';
+import { BaseUseCase, IRepository } from '@org/shared-kernel';
+import { Product } from '../aggregates/product.aggregate';
 
 type Request = {
   name: string;
   description: string;
-  price: number;
-  image: string;
 };
 
 type Response = void;
 
-export class CreateProduct extends BaseUseCase<Request, Response> {
+export class CreateProductUseCase extends BaseUseCase<Request, Response> {
+  constructor(private readonly repository: IRepository<Product>) {
+    super();
+  }
+
   async execute(request: Request): Promise<Response> {}
 }
