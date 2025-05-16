@@ -1,0 +1,791 @@
+{
+  "version": "6.0",
+  "nxVersion": "17.3.2",
+  "deps": {
+    "@nestjs/cli": "^10.0.0",
+    "@nx/workspace": "^21.0.3",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^20.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^9.26.0",
+    "nx": "17.3.2",
+    "prettier": "^3.0.0",
+    "typescript": "^5.0.0"
+  },
+  "pathMappings": {
+    "@sshop/shared-kernel": [
+      "packages/shared-kernel/src/index.ts"
+    ],
+    "@sshop/shared-infra": [
+      "packages/shared-infra/src/index.ts"
+    ]
+  },
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "nonProjectFiles": [
+      {
+        "file": ".git/hooks/pre-commit.sample",
+        "hash": "2931916916104981897"
+      },
+      {
+        "file": "package.json",
+        "hash": "4071395654576212488"
+      },
+      {
+        "file": ".nx/cache/8722461745889319054/code",
+        "hash": "1838281907459330133"
+      },
+      {
+        "file": ".nx/cache/5422712069208036728/terminalOutput",
+        "hash": "7680862742905163468"
+      },
+      {
+        "file": ".nx/cache/7319536334110636179.commit",
+        "hash": "4664556114322093609"
+      },
+      {
+        "file": ".nx/cache/parsed-lock-file.json",
+        "hash": "9718113430998226613"
+      },
+      {
+        "file": ".nx/cache/2638663406588574967/terminalOutput",
+        "hash": "12738599479799733029"
+      },
+      {
+        "file": ".nx/cache/lockfile.hash",
+        "hash": "13618920345332901668"
+      },
+      {
+        "file": ".git/HEAD",
+        "hash": "6460185820263248482"
+      },
+      {
+        "file": ".nx/cache/2638663406588574967/code",
+        "hash": "1838281907459330133"
+      },
+      {
+        "file": ".git/hooks/pre-rebase.sample",
+        "hash": "15784748353859782246"
+      },
+      {
+        "file": ".nx/cache/2638663406588574967/source",
+        "hash": "7728155829759376826"
+      },
+      {
+        "file": ".nx/cache/file-map.json",
+        "hash": "6620312686325791808"
+      },
+      {
+        "file": ".nx/cache/terminalOutputs/17544780158532390452",
+        "hash": "8215222020020134765"
+      },
+      {
+        "file": ".git/hooks/pre-applypatch.sample",
+        "hash": "1595391782482835178"
+      },
+      {
+        "file": "pnpm-workspace.yaml",
+        "hash": "12870792005663419851"
+      },
+      {
+        "file": ".nx/cache/1951061505487736920/source",
+        "hash": "7728155829759376826"
+      },
+      {
+        "file": ".nx/cache/5422712069208036728/code",
+        "hash": "1838281907459330133"
+      },
+      {
+        "file": ".nx/cache/5422712069208036728/source",
+        "hash": "7728155829759376826"
+      },
+      {
+        "file": ".nx/cache/8722461745889319054.commit",
+        "hash": "4664556114322093609"
+      },
+      {
+        "file": ".nx/cache/project-graph.json",
+        "hash": "8884863134703141022"
+      },
+      {
+        "file": ".git/description",
+        "hash": "15082563526350840523"
+      },
+      {
+        "file": "pnpm-lock.yaml",
+        "hash": "16704503844276661603"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "7806045639979432933"
+      },
+      {
+        "file": "nx.json",
+        "hash": "11159306706709625332"
+      },
+      {
+        "file": ".nx/cache/1951061505487736920/code",
+        "hash": "1838281907459330133"
+      },
+      {
+        "file": ".nx/cache/1951061505487736920.commit",
+        "hash": "4664556114322093609"
+      },
+      {
+        "file": ".nx/cache/terminalOutputs/2638663406588574967",
+        "hash": "12738599479799733029"
+      },
+      {
+        "file": ".nx/cache/8722461745889319054/source",
+        "hash": "7728155829759376826"
+      },
+      {
+        "file": ".nx/cache/7319536334110636179/terminalOutput",
+        "hash": "6326894508189435183"
+      },
+      {
+        "file": ".github/workflows/pr-check.yml",
+        "hash": "11561878516430083910"
+      },
+      {
+        "file": ".nx/cache/nx_files.nxt",
+        "hash": "6065506268303758789"
+      },
+      {
+        "file": ".nx/cache/terminalOutputs/7319536334110636179",
+        "hash": "6326894508189435183"
+      },
+      {
+        "file": ".git/hooks/post-update.sample",
+        "hash": "16498975149454253769"
+      },
+      {
+        "file": "README.md",
+        "hash": "8674782089718377213"
+      },
+      {
+        "file": ".nx/cache/5422712069208036728.commit",
+        "hash": "4664556114322093609"
+      },
+      {
+        "file": ".git/hooks/pre-receive.sample",
+        "hash": "8999430056057037490"
+      },
+      {
+        "file": ".nx/cache/terminalOutputs/1951061505487736920",
+        "hash": "9555172363860263727"
+      },
+      {
+        "file": ".nx/cache/run.json",
+        "hash": "11845664979001077186"
+      },
+      {
+        "file": ".git/config",
+        "hash": "819581803742060620"
+      },
+      {
+        "file": ".nx/cache/17544780158532390452/code",
+        "hash": "1838281907459330133"
+      },
+      {
+        "file": ".git/hooks/applypatch-msg.sample",
+        "hash": "3740124940738663445"
+      },
+      {
+        "file": ".git/hooks/pre-push.sample",
+        "hash": "3666369642558647280"
+      },
+      {
+        "file": ".nx/cache/8722461745889319054/terminalOutput",
+        "hash": "11951418659603349813"
+      },
+      {
+        "file": ".nx/cache/terminalOutputs/8722461745889319054",
+        "hash": "11951418659603349813"
+      },
+      {
+        "file": ".git/hooks/sendemail-validate.sample",
+        "hash": "7660090827690999586"
+      },
+      {
+        "file": ".nx/cache/terminalOutputs/5422712069208036728",
+        "hash": "7680862742905163468"
+      },
+      {
+        "file": ".git/info/exclude",
+        "hash": "2084763735014985388"
+      },
+      {
+        "file": ".git/hooks/fsmonitor-watchman.sample",
+        "hash": "5519580754951798083"
+      },
+      {
+        "file": ".nx/cache/7319536334110636179/code",
+        "hash": "1838281907459330133"
+      },
+      {
+        "file": ".git/hooks/commit-msg.sample",
+        "hash": "11930680668000581900"
+      },
+      {
+        "file": ".nx/cache/17544780158532390452.commit",
+        "hash": "4664556114322093609"
+      },
+      {
+        "file": ".git/hooks/push-to-checkout.sample",
+        "hash": "5194610557431485830"
+      },
+      {
+        "file": ".nx/cache/17544780158532390452/source",
+        "hash": "7728155829759376826"
+      },
+      {
+        "file": "CONTEXT.md",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": ".git/hooks/prepare-commit-msg.sample",
+        "hash": "4009645067798984574"
+      },
+      {
+        "file": ".git/hooks/pre-merge-commit.sample",
+        "hash": "5691533144974613569"
+      },
+      {
+        "file": ".nx/cache/7319536334110636179/source",
+        "hash": "7728155829759376826"
+      },
+      {
+        "file": ".git/hooks/update.sample",
+        "hash": "14696759095365231402"
+      },
+      {
+        "file": ".nx/cache/17544780158532390452/terminalOutput",
+        "hash": "8215222020020134765"
+      },
+      {
+        "file": ".nx/cache/1951061505487736920/terminalOutput",
+        "hash": "9555172363860263727"
+      },
+      {
+        "file": ".nx/cache/2638663406588574967.commit",
+        "hash": "4664556114322093609"
+      },
+      {
+        "file": ".gitattributes",
+        "hash": "13194702717607086212"
+      }
+    ],
+    "projectFileMap": {
+      "fulfillment-svc": [
+        {
+          "file": "services/fulfillment-svc/.prettierrc",
+          "hash": "4808572120966128913"
+        },
+        {
+          "file": "services/fulfillment-svc/Dockerfile",
+          "hash": "5987441431021910076"
+        },
+        {
+          "file": "services/fulfillment-svc/FULFILLMENT.md",
+          "hash": "15020444248073852501"
+        },
+        {
+          "file": "services/fulfillment-svc/README.md",
+          "hash": "10741870943097893083"
+        },
+        {
+          "file": "services/fulfillment-svc/eslint.config.mjs",
+          "hash": "341460240617997069",
+          "deps": [
+            "npm:@eslint/js",
+            "npm:eslint-plugin-prettier/recommended",
+            "npm:globals",
+            "npm:typescript-eslint"
+          ]
+        },
+        {
+          "file": "services/fulfillment-svc/nest-cli.json",
+          "hash": "789240945379598733"
+        },
+        {
+          "file": "services/fulfillment-svc/package.json",
+          "hash": "14696042972381239187"
+        },
+        {
+          "file": "services/fulfillment-svc/src/app.controller.spec.ts",
+          "hash": "2727664763654384995",
+          "deps": [
+            "npm:@nestjs/testing"
+          ]
+        },
+        {
+          "file": "services/fulfillment-svc/src/app.controller.ts",
+          "hash": "4552329938751326480",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "services/fulfillment-svc/src/app.module.ts",
+          "hash": "11673476679848632172",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "services/fulfillment-svc/src/app.service.ts",
+          "hash": "16892833931858030153",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "services/fulfillment-svc/src/fulfillment.module.ts",
+          "hash": "1003316702161678940",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "services/fulfillment-svc/src/main.ts",
+          "hash": "6783086878492621953",
+          "deps": [
+            "npm:@nestjs/core"
+          ]
+        },
+        {
+          "file": "services/fulfillment-svc/test/app.e2e-spec.ts",
+          "hash": "7164584812487523395",
+          "deps": [
+            "npm:@nestjs/testing",
+            "npm:@nestjs/common",
+            "npm:supertest",
+            "npm:supertest/types"
+          ]
+        },
+        {
+          "file": "services/fulfillment-svc/test/jest-e2e.json",
+          "hash": "7570273541430074424"
+        },
+        {
+          "file": "services/fulfillment-svc/tsconfig.build.json",
+          "hash": "276845246908739715"
+        },
+        {
+          "file": "services/fulfillment-svc/tsconfig.json",
+          "hash": "1113768818573961485"
+        }
+      ],
+      "customer-svc": [
+        {
+          "file": "services/customer-svc/.prettierrc",
+          "hash": "4808572120966128913"
+        },
+        {
+          "file": "services/customer-svc/CUSTOMER.md",
+          "hash": "12868046722722601590"
+        },
+        {
+          "file": "services/customer-svc/Dockerfile",
+          "hash": "4139004623351182315"
+        },
+        {
+          "file": "services/customer-svc/README.md",
+          "hash": "10741870943097893083"
+        },
+        {
+          "file": "services/customer-svc/eslint.config.mjs",
+          "hash": "341460240617997069",
+          "deps": [
+            "npm:@eslint/js",
+            "npm:eslint-plugin-prettier/recommended",
+            "npm:globals",
+            "npm:typescript-eslint"
+          ]
+        },
+        {
+          "file": "services/customer-svc/nest-cli.json",
+          "hash": "789240945379598733"
+        },
+        {
+          "file": "services/customer-svc/package.json",
+          "hash": "6127076825483043923"
+        },
+        {
+          "file": "services/customer-svc/src/app.controller.spec.ts",
+          "hash": "2727664763654384995",
+          "deps": [
+            "npm:@nestjs/testing"
+          ]
+        },
+        {
+          "file": "services/customer-svc/src/app.controller.ts",
+          "hash": "4552329938751326480",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "services/customer-svc/src/app.module.ts",
+          "hash": "11673476679848632172",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "services/customer-svc/src/app.service.ts",
+          "hash": "16892833931858030153",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "services/customer-svc/src/customer.module.ts",
+          "hash": "3381945203781073276",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "services/customer-svc/src/main.ts",
+          "hash": "6783086878492621953",
+          "deps": [
+            "npm:@nestjs/core"
+          ]
+        },
+        {
+          "file": "services/customer-svc/test/app.e2e-spec.ts",
+          "hash": "7164584812487523395",
+          "deps": [
+            "npm:@nestjs/testing",
+            "npm:@nestjs/common",
+            "npm:supertest",
+            "npm:supertest/types"
+          ]
+        },
+        {
+          "file": "services/customer-svc/test/jest-e2e.json",
+          "hash": "7570273541430074424"
+        },
+        {
+          "file": "services/customer-svc/tsconfig.build.json",
+          "hash": "276845246908739715"
+        },
+        {
+          "file": "services/customer-svc/tsconfig.json",
+          "hash": "1113768818573961485"
+        }
+      ],
+      "ordering-svc": [
+        {
+          "file": "services/ordering-svc/.prettierrc",
+          "hash": "4808572120966128913"
+        },
+        {
+          "file": "services/ordering-svc/Dockerfile",
+          "hash": "14012782292119057544"
+        },
+        {
+          "file": "services/ordering-svc/ORDERING.md",
+          "hash": "7921148722735293624"
+        },
+        {
+          "file": "services/ordering-svc/README.md",
+          "hash": "10741870943097893083"
+        },
+        {
+          "file": "services/ordering-svc/eslint.config.mjs",
+          "hash": "341460240617997069",
+          "deps": [
+            "npm:@eslint/js",
+            "npm:eslint-plugin-prettier/recommended",
+            "npm:globals",
+            "npm:typescript-eslint"
+          ]
+        },
+        {
+          "file": "services/ordering-svc/nest-cli.json",
+          "hash": "789240945379598733"
+        },
+        {
+          "file": "services/ordering-svc/package.json",
+          "hash": "15010754836984713996"
+        },
+        {
+          "file": "services/ordering-svc/src/app.controller.spec.ts",
+          "hash": "2727664763654384995",
+          "deps": [
+            "npm:@nestjs/testing"
+          ]
+        },
+        {
+          "file": "services/ordering-svc/src/app.controller.ts",
+          "hash": "4552329938751326480",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "services/ordering-svc/src/app.module.ts",
+          "hash": "11673476679848632172",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "services/ordering-svc/src/app.service.ts",
+          "hash": "16892833931858030153",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "services/ordering-svc/src/main.ts",
+          "hash": "6783086878492621953",
+          "deps": [
+            "npm:@nestjs/core"
+          ]
+        },
+        {
+          "file": "services/ordering-svc/src/ordering.module.ts",
+          "hash": "5232975341824754875",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "services/ordering-svc/test/app.e2e-spec.ts",
+          "hash": "7164584812487523395",
+          "deps": [
+            "npm:@nestjs/testing",
+            "npm:@nestjs/common",
+            "npm:supertest",
+            "npm:supertest/types"
+          ]
+        },
+        {
+          "file": "services/ordering-svc/test/jest-e2e.json",
+          "hash": "7570273541430074424"
+        },
+        {
+          "file": "services/ordering-svc/test/unit/add-item-to-cart.spec.ts",
+          "hash": "5069234251598253669"
+        },
+        {
+          "file": "services/ordering-svc/tsconfig.build.json",
+          "hash": "276845246908739715"
+        },
+        {
+          "file": "services/ordering-svc/tsconfig.json",
+          "hash": "11392912191490689003"
+        }
+      ],
+      "catalog-svc": [
+        {
+          "file": "services/catalog-svc/.prettierrc",
+          "hash": "4808572120966128913"
+        },
+        {
+          "file": "services/catalog-svc/CATALOG.md",
+          "hash": "14390598134186286623"
+        },
+        {
+          "file": "services/catalog-svc/Dockerfile",
+          "hash": "3823501725185849998"
+        },
+        {
+          "file": "services/catalog-svc/README.md",
+          "hash": "10741870943097893083"
+        },
+        {
+          "file": "services/catalog-svc/eslint.config.mjs",
+          "hash": "341460240617997069",
+          "deps": [
+            "npm:@eslint/js",
+            "npm:eslint-plugin-prettier/recommended",
+            "npm:globals",
+            "npm:typescript-eslint"
+          ]
+        },
+        {
+          "file": "services/catalog-svc/nest-cli.json",
+          "hash": "789240945379598733"
+        },
+        {
+          "file": "services/catalog-svc/package.json",
+          "hash": "3750861441920588559"
+        },
+        {
+          "file": "services/catalog-svc/src/app.controller.spec.ts",
+          "hash": "2727664763654384995",
+          "deps": [
+            "npm:@nestjs/testing"
+          ]
+        },
+        {
+          "file": "services/catalog-svc/src/app.controller.ts",
+          "hash": "4552329938751326480",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "services/catalog-svc/src/app.module.ts",
+          "hash": "11673476679848632172",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "services/catalog-svc/src/app.service.ts",
+          "hash": "16892833931858030153",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "services/catalog-svc/src/catalog.module.ts",
+          "hash": "14642099681903979989",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "services/catalog-svc/src/core/entities/product.entity.ts",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "services/catalog-svc/src/main.ts",
+          "hash": "6783086878492621953",
+          "deps": [
+            "npm:@nestjs/core"
+          ]
+        },
+        {
+          "file": "services/catalog-svc/test/app.e2e-spec.ts",
+          "hash": "7164584812487523395",
+          "deps": [
+            "npm:@nestjs/testing",
+            "npm:@nestjs/common",
+            "npm:supertest",
+            "npm:supertest/types"
+          ]
+        },
+        {
+          "file": "services/catalog-svc/test/jest-e2e.json",
+          "hash": "7570273541430074424"
+        },
+        {
+          "file": "services/catalog-svc/tsconfig.build.json",
+          "hash": "276845246908739715"
+        },
+        {
+          "file": "services/catalog-svc/tsconfig.json",
+          "hash": "1113768818573961485"
+        }
+      ],
+      "payment-svc": [
+        {
+          "file": "services/payment-svc/.prettierrc",
+          "hash": "4808572120966128913"
+        },
+        {
+          "file": "services/payment-svc/Dockerfile",
+          "hash": "5607789265754207373"
+        },
+        {
+          "file": "services/payment-svc/PAYMENT.md",
+          "hash": "17268059921057858455"
+        },
+        {
+          "file": "services/payment-svc/README.md",
+          "hash": "10741870943097893083"
+        },
+        {
+          "file": "services/payment-svc/eslint.config.mjs",
+          "hash": "341460240617997069",
+          "deps": [
+            "npm:@eslint/js",
+            "npm:eslint-plugin-prettier/recommended",
+            "npm:globals",
+            "npm:typescript-eslint"
+          ]
+        },
+        {
+          "file": "services/payment-svc/nest-cli.json",
+          "hash": "789240945379598733"
+        },
+        {
+          "file": "services/payment-svc/package.json",
+          "hash": "8039071440171570281"
+        },
+        {
+          "file": "services/payment-svc/src/app.controller.spec.ts",
+          "hash": "2727664763654384995",
+          "deps": [
+            "npm:@nestjs/testing"
+          ]
+        },
+        {
+          "file": "services/payment-svc/src/app.controller.ts",
+          "hash": "4552329938751326480",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "services/payment-svc/src/app.module.ts",
+          "hash": "11673476679848632172",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "services/payment-svc/src/app.service.ts",
+          "hash": "16892833931858030153",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "services/payment-svc/src/main.ts",
+          "hash": "6783086878492621953",
+          "deps": [
+            "npm:@nestjs/core"
+          ]
+        },
+        {
+          "file": "services/payment-svc/src/payment.module.ts",
+          "hash": "10996511584255796817",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "services/payment-svc/test/app.e2e-spec.ts",
+          "hash": "7164584812487523395",
+          "deps": [
+            "npm:@nestjs/testing",
+            "npm:@nestjs/common",
+            "npm:supertest",
+            "npm:supertest/types"
+          ]
+        },
+        {
+          "file": "services/payment-svc/test/jest-e2e.json",
+          "hash": "7570273541430074424"
+        },
+        {
+          "file": "services/payment-svc/tsconfig.build.json",
+          "hash": "276845246908739715"
+        },
+        {
+          "file": "services/payment-svc/tsconfig.json",
+          "hash": "1113768818573961485"
+        }
+      ]
+    }
+  }
+}

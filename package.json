@@ -1,0 +1,23 @@
+{
+  "name": "sshop",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "build": "nx run-many --target=build --all",
+    "test": "nx run-many --target=test --all",
+    "lint": "nx run-many --target=lint --all",
+    "format": "prettier --write \"**/*.{ts,js,json,md}\""
+  },
+  "devDependencies": {
+    "@nestjs/cli": "^10.0.0",
+    "@nx/workspace": "^21.0.3",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^20.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^9.26.0",
+    "nx": "17.3.2",
+    "prettier": "^3.0.0",
+    "typescript": "^5.0.0"
+  }
+}

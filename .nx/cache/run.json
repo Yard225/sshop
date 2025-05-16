@@ -1,0 +1,65 @@
+{
+  "run": {
+    "command": "nx run-many --target=test --all",
+    "startTime": "2025-05-16T09:58:12.094Z",
+    "endTime": "2025-05-16T09:58:24.396Z",
+    "inner": false
+  },
+  "tasks": [
+    {
+      "taskId": "ordering-svc:test",
+      "target": "test",
+      "projectName": "ordering-svc",
+      "hash": "8722461745889319054",
+      "startTime": "2025-05-16T09:58:12.102Z",
+      "endTime": "2025-05-16T09:58:12.142Z",
+      "params": "",
+      "cacheStatus": "local-cache-hit",
+      "status": 0
+    },
+    {
+      "taskId": "fulfillment-svc:test",
+      "target": "test",
+      "projectName": "fulfillment-svc",
+      "hash": "7319536334110636179",
+      "startTime": "2025-05-16T09:58:12.102Z",
+      "endTime": "2025-05-16T09:58:20.041Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    },
+    {
+      "taskId": "customer-svc:test",
+      "target": "test",
+      "projectName": "customer-svc",
+      "hash": "17544780158532390452",
+      "startTime": "2025-05-16T09:58:12.102Z",
+      "endTime": "2025-05-16T09:58:20.650Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    },
+    {
+      "taskId": "catalog-svc:test",
+      "target": "test",
+      "projectName": "catalog-svc",
+      "hash": "2638663406588574967",
+      "startTime": "2025-05-16T09:58:12.147Z",
+      "endTime": "2025-05-16T09:58:20.824Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    },
+    {
+      "taskId": "payment-svc:test",
+      "target": "test",
+      "projectName": "payment-svc",
+      "hash": "5422712069208036728",
+      "startTime": "2025-05-16T09:58:20.045Z",
+      "endTime": "2025-05-16T09:58:24.395Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    }
+  ]
+}
