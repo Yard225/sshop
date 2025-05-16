@@ -14,11 +14,11 @@
     "typescript": "^5.0.0"
   },
   "pathMappings": {
-    "@sshop/shared-kernel": [
-      "packages/shared-kernel/src/index.ts"
+    "@org/shared-kernel": [
+      "packages/shared-kernel/src"
     ],
-    "@sshop/shared-infra": [
-      "packages/shared-infra/src/index.ts"
+    "@org/shared-infra": [
+      "packages/shared-infra/src"
     ]
   },
   "nxJsonPlugins": [],

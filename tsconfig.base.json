@@ -15,8 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@sshop/shared-kernel": ["packages/shared-kernel/src/index.ts"],
-      "@sshop/shared-infra": ["packages/shared-infra/src/index.ts"]
+      "@org/shared-kernel": ["packages/shared-kernel/src"],
+      "@org/shared-infra": ["packages/shared-infra/src"]
     }
   },
   "exclude": ["node_modules", "tmp"]
